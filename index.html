@@ -929,6 +929,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       transform: none;
     }
 
+    @keyframes ai-chip-pulse {
+      0%, 100% { box-shadow: 5px 5px 0 var(--ink); }
+      50%       { box-shadow: 7px 7px 0 var(--ink), 0 0 0 4px rgba(184, 167, 255, 0.38); }
+    }
+
+    .role-chip.is-ai-chip {
+      background: var(--purple);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      font-weight: 950;
+      font-size: 13px;
+      box-shadow: 5px 5px 0 var(--ink);
+      padding: 9px 18px;
+      animation: ai-chip-pulse 2.4s ease-in-out infinite;
+    }
+
+    .role-chip.is-ai-chip::before {
+      content: "✦ ";
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    .role-chip.is-ai-chip:hover {
+      background: #c9baff;
+      transform: translate(-2px, -2px);
+      box-shadow: 7px 7px 0 var(--ink);
+      animation: none;
+    }
+
+    .role-chip.is-ai-chip.is-active {
+      background: var(--yellow);
+      animation: none;
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .role-chip.is-ai-chip.is-disabled {
+      animation: none;
+    }
+
     .role-toolbar {
       display: flex;
       align-items: center;
@@ -2065,7 +2104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 aria-selected="false">教育支援</button>
               <button type="button" class="role-chip" data-filter-group="category" data-role-filter="finance"
                 aria-selected="false">金融分析</button>
-              <button type="button" class="role-chip" data-filter-group="category" data-role-filter="ai"
+              <button type="button" class="role-chip is-ai-chip" data-filter-group="category" data-role-filter="ai"
                 aria-selected="false">AI 相關</button>
             </div>
             <p class="role-filter-hint">部分職位可能適用於多個職位類別。</p>
