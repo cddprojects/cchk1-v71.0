@@ -1049,6 +1049,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--ink);
     }
 
+    .role-tag.is-ai {
+      background: var(--green);
+      color: var(--ink);
+    }
+
     .role-card.is-featured .role-apply {
       background: var(--yellow);
       box-shadow: 6px 6px 0 var(--ink);
@@ -2060,13 +2065,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 aria-selected="false">教育支援</button>
               <button type="button" class="role-chip" data-filter-group="category" data-role-filter="finance"
                 aria-selected="false">金融分析</button>
+              <button type="button" class="role-chip" data-filter-group="category" data-role-filter="ai"
+                aria-selected="false">AI 相關</button>
             </div>
             <p class="role-filter-hint">部分職位可能適用於多個職位類別。</p>
           </div>
         </div>
 
         <div class="role-toolbar">
-          <div class="role-count">顯示 <strong id="role-count">11</strong> 個職位</div>
+          <div class="role-count">顯示 <strong id="role-count">15</strong> 個職位</div>
           <div class="role-toolbar-actions">
             <span>遙距／在家工作為主</span>
             <button type="button" class="role-clear-btn" id="role-clear-filters">清除篩選</button>
@@ -2457,6 +2464,150 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <ul class="role-requirements">
               <li>中文書寫通順；懂英文更佳</li>
               <li>有電商或零售文案經驗優先</li>
+            </ul>
+            <a href="#interest-form" class="btn btn-primary role-apply">登記此類別</a>
+          </article>
+
+          <article class="role-card" data-types="freelance parttime" data-category="ai" data-job="ai-trainer">
+            <div class="role-card-top">
+              <div class="role-tags">
+                <span class="role-tag is-ai">AI 相關</span>
+                <span class="role-tag">Freelance</span>
+                <span class="role-tag">兼職</span>
+                <span class="role-tag is-remote">遙距</span>
+              </div>
+              <span class="role-status is-hot">熱門登記中</span>
+            </div>
+            <h3>AI 訓練員（AI Trainer）</h3>
+            <div class="role-salary">Freelance HKD 155–235／小時（約 $20–30 USD）</div>
+            <dl class="role-facts">
+              <div class="role-fact">
+                <dt>工作性質</dt>
+                <dd>Freelance／兼職</dd>
+              </div>
+              <div class="role-fact">
+                <dt>工作地點</dt>
+                <dd>遙距／在家工作</dd>
+              </div>
+              <div class="role-fact">
+                <dt>結算週期</dt>
+                <dd>按任務完成後結算（PayPal 或銀行轉帳）</dd>
+              </div>
+            </dl>
+            <p class="role-summary"><strong>簡介：</strong>以中英文與 AI 聊天機械人對話，評估其回應質素，並撰寫新對話範例協助訓練模型，提升準確度與自然程度。</p>
+            <p class="role-summary"><strong>要求：</strong></p>
+            <ul class="role-requirements">
+              <li>流利中英文書寫能力（粵語書寫尤佳）</li>
+              <li>細心、擅長分析文字表達及邏輯</li>
+              <li>有大學學歷或在讀更佳；毋須編程背景</li>
+            </ul>
+            <a href="#interest-form" class="btn btn-primary role-apply">登記此類別</a>
+          </article>
+
+          <article class="role-card" data-types="freelance parttime" data-category="ai" data-job="ai-data-annotator">
+            <div class="role-card-top">
+              <div class="role-tags">
+                <span class="role-tag is-ai">AI 相關</span>
+                <span class="role-tag">Freelance</span>
+                <span class="role-tag">兼職</span>
+                <span class="role-tag is-remote">遙距</span>
+              </div>
+              <span class="role-status">開放登記</span>
+            </div>
+            <h3>AI 數據標註及審核員</h3>
+            <div class="role-salary">Freelance HKD 55–100／小時</div>
+            <dl class="role-facts">
+              <div class="role-fact">
+                <dt>工作性質</dt>
+                <dd>Freelance／兼職</dd>
+              </div>
+              <div class="role-fact">
+                <dt>工作地點</dt>
+                <dd>遙距／在家工作</dd>
+              </div>
+              <div class="role-fact">
+                <dt>結算週期</dt>
+                <dd>按任務或批次完成後結算</dd>
+              </div>
+            </dl>
+            <p class="role-summary"><strong>簡介：</strong>為 AI 模型訓練數據進行標籤、分類及質量審核，包括繁體中文文字標注、格式核對及內容核實，確保數據符合客戶規格。</p>
+            <p class="role-summary"><strong>要求：</strong></p>
+            <ul class="role-requirements">
+              <li>繁體中文閱讀及書寫能力（香港用語）</li>
+              <li>細心有耐性，能按指引完成結構化任務</li>
+              <li>毋須相關學歷或技術背景</li>
+            </ul>
+            <a href="#interest-form" class="btn btn-primary role-apply">登記此類別</a>
+          </article>
+
+          <article class="role-card" data-types="freelance parttime" data-category="ai" data-job="ai-prompt-engineer">
+            <div class="role-card-top">
+              <div class="role-tags">
+                <span class="role-tag is-ai">AI 相關</span>
+                <span class="role-tag">Freelance</span>
+                <span class="role-tag">兼職</span>
+                <span class="role-tag is-remote">遙距</span>
+              </div>
+              <span class="role-status">開放登記</span>
+            </div>
+            <h3>AI 提示工程助理（Prompt Engineering）</h3>
+            <div class="role-salary">Freelance HKD 100–200／小時 · 兼職 HKD 80–160／小時</div>
+            <dl class="role-facts">
+              <div class="role-fact">
+                <dt>工作性質</dt>
+                <dd>Freelance／兼職</dd>
+              </div>
+              <div class="role-fact">
+                <dt>工作地點</dt>
+                <dd>遙距／在家工作</dd>
+              </div>
+              <div class="role-fact">
+                <dt>結算週期</dt>
+                <dd>按項目或月結</dd>
+              </div>
+            </dl>
+            <p class="role-summary"><strong>簡介：</strong>為企業或個人客戶設計及測試 AI 提示語（Prompt），優化 ChatGPT、Claude 等大型語言模型的輸出結果，提升工作效率及產出質素。</p>
+            <p class="role-summary"><strong>要求：</strong></p>
+            <ul class="role-requirements">
+              <li>熟悉 ChatGPT、Claude 或類似 AI 工具的日常使用</li>
+              <li>中英文表達清晰；具備分析思維</li>
+              <li>有內容創作、文案或教育工作背景者優先</li>
+            </ul>
+            <a href="#interest-form" class="btn btn-primary role-apply">登記此類別</a>
+          </article>
+
+          <article class="role-card" data-types="fulltime parttime" data-category="ai support" data-job="ai-customer-service">
+            <div class="role-card-top">
+              <div class="role-tags">
+                <span class="role-tag is-ai">AI 相關</span>
+                <span class="role-tag">全職</span>
+                <span class="role-tag">兼職</span>
+                <span class="role-tag is-remote">遙距</span>
+              </div>
+              <span class="role-status">開放登記</span>
+            </div>
+            <h3>AI 客服數位專員</h3>
+            <div class="role-salary">全職 HKD 16,000–25,000／月 · 兼職 HKD 80–130／小時</div>
+            <dl class="role-facts">
+              <div class="role-fact">
+                <dt>工作性質</dt>
+                <dd>全職／兼職</dd>
+              </div>
+              <div class="role-fact">
+                <dt>工作地點</dt>
+                <dd>遙距／在家工作</dd>
+              </div>
+              <div class="role-fact">
+                <dt>結算週期</dt>
+                <dd>全職月結；兼職周結</dd>
+              </div>
+            </dl>
+            <p class="role-summary"><strong>簡介：</strong>運用 AI 客服工具（如 Zendesk AI、Intercom）處理客戶查詢，監察 AI 自動回覆質素，並在需要時介入以人工回應，確保客戶體驗。</p>
+            <p class="role-summary"><strong>要求：</strong></p>
+            <ul class="role-requirements">
+              <li>熟悉基本電腦操作及即時通訊工具</li>
+              <li>粵語溝通流利；懂英文書寫更佳</li>
+              <li>有客服或銷售經驗者優先；願意接受 AI 工具培訓</li>
             </ul>
             <a href="#interest-form" class="btn btn-primary role-apply">登記此類別</a>
           </article>
